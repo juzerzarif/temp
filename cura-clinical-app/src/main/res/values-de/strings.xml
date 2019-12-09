@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="close" tools:override="true">Schließen</string>
+    <string name="drawer_open">Schublade öffnen</string>
+    <string name="drawer_close">Schublade schließen</string>
+    <string name="drawer_patient_chart">Patientenakte</string>
+    <string name="drawer_medsadmin">Medikationen</string>
+    <string name="drawer_speccol">Specimen Collections</string>
+    <string name="drawer_charting_navigator">Charting</string>
+    <string name="drawer_logout_confirmation">Möchten Sie sich wirklich abmelden?</string>
+    <string name="patientlist_title">Patientenliste</string>
+    <string name="patientlist_nodataavailable">Die Patientenliste enthält keine Patienten.</string>
+    <string name="patientlist_toomanypatients">Die Patientenliste überschreitet die Anzahl zulässiger Patienten. Wählen Sie eine andere Liste.</string>
+    <string name="patientlist_changelist_nodataavailable">Keine Listen verfügbar</string>
+    <string name="patientlist_namealert">*Namenswarnung</string>
+    <string name="patientlist_no_relationship_exists">Keine Beziehung vorhanden</string>
+    <string name="patientlist_room_bed_format">%1$s - %2$s</string>
+    <string name="select_list">Liste auswählen</string>
+    <string name="sort_list">Liste sortieren</string>
+    <string name="sortlist_option_location">Standort</string>
+    <string name="sortlist_option_name">Name</string>
+    <string name="no_known_allergies">Keine Allergien bekannt</string>
+    <string name="no_known_medication_allergies">Keine Medikamentenallergien bekannt</string>
+    <string name="no_medication_allergies_recorded">Keine Medikamentenallergien dokumentiert</string>
+    <string name="careteam_title">Pflegeteam</string>
+    <string name="patient_summary_fragment_title">Patientenübersicht</string>
+    <string name="settings_changepin">PIN ändern</string>
+    <string name="settings_createpin">PIN erstellen</string>
+    <string name="settings_removepin">PIN entfernen</string>
+    <string name="settings_organization">Organisation</string>
+    <string name="settings_logout">Abmelden</string>
+    <string name="settings_title">Einstellungen</string>
+    <string name="org_select_title">Organisation auswählen</string>
+    <string name="org_nodataavailable">Keine Organisationen verfügbar</string>
+    <string name="patient_not_selected">Keine Akte geöffnet</string>
+    <string name="name_alert_ind">*&lt;i&gt;%s&lt;/i&gt;</string>
+    <string name="user_full_name">%1$s, %2$s</string>
+    <string name="work_in_progress_logout">Die gesamte Dokumentation geht verloren. Möchten Sie sich wirklich abmelden?</string>
+
+    <string name="about">Info über</string>
+
+</resources>

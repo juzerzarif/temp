@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cura="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CuraTheme.Fragment.Dark"
+    tools:context=".ui.PatientSummaryFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout_patient_summary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/patient_summary_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:orientation="vertical">
+
+                <com.cerner.cura.ui.elements.cards.ListCard
+                    android:id="@+id/patientsummary_itemforreviewcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CardView"
+                    cura:cardtitle=""/>
+
+                <com.cerner.cura.ui.elements.cards.ListCard
+                    android:id="@+id/patientsummary_vitalsandmeasurements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CardView"
+                    cura:dividerDrawable="@drawable/card_separator"
+                    cura:cardtitle="@string/vitals_and_measurements_fragment_title"/>
+
+                <com.cerner.cura.ui.elements.cards.ListCard
+                    android:id="@+id/patientsummary_allergiescard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CardView"
+                    cura:cardtitle="@string/allergy_fragment_title"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

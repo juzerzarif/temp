@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Disable ContentDescription check in this project since nurses are
+        required to have a certain level of visual acuity -->
+    <issue id="ContentDescription" severity="ignore"/>
+
+    <!-- Change the severity of hardcoded strings to "error"
+        and ignore the issue in the dev only layout -->
+    <issue id="HardcodedText">
+        <ignore path="src/main/res/layout/pct_start_activity.xml"/>
+    </issue>
+
+    <!-- Excluding due to UX not providing icons of all densities -->
+    <issue id="IconDensities" severity="ignore"/>
+    <issue id="IconMissingDensityFolder" severity="ignore"/>
+
+    <!-- Don't require app icon shape distiction since one has not been provided by UX -->
+    <issue id="IconLauncherShape" severity="ignore"/>
+
+    <!-- Ignore this new lint warning that shouldnt be checked -->
+    <issue id="GoogleAppIndexingWarning" severity="ignore" />
+
+    <!-- TODO ml015922: REMOVE once cerner-android-ui, cerner-android-ion, and ion-security properly defines its public resources -->
+    <issue id="PrivateResource" severity="ignore" />
+
+    <!-- The SET_TIME_ZONE permission is removed in the production manifest, that removal triggers this inspection  -->
+    <issue id="ProtectedPermissions">
+        <ignore path="src/release/AndroidManifest.xml"/>
+    </issue>
+</lint>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="close" tools:override="true">Fechar</string>
+    <string name="drawer_open">Abrir gabinete</string>
+    <string name="drawer_close">Fechar gabinete</string>
+    <string name="drawer_patient_chart">Quadro do paciente</string>
+    <string name="drawer_medsadmin">de medicações</string>
+    <string name="drawer_speccol">Specimen Collections</string>
+    <string name="drawer_charting_navigator">Charting</string>
+    <string name="drawer_logout_confirmation">Tem certeza de que deseja fazer logoff?</string>
+    <string name="patientlist_title">Lista de pacientes</string>
+    <string name="patientlist_nodataavailable">Nenhum paciente encontrado na lista de pacientes</string>
+    <string name="patientlist_toomanypatients">A lista de pacientes excede o número permitido de pacientes. Selecione outra lista de pacientes.</string>
+    <string name="patientlist_changelist_nodataavailable">Nenhuma lista disponível</string>
+    <string name="patientlist_namealert">*Nomear alerta</string>
+    <string name="patientlist_no_relationship_exists">Não existe nenhuma relação</string>
+    <string name="patientlist_room_bed_format">%1$s - %2$s</string>
+    <string name="select_list">Selecionar lista</string>
+    <string name="sort_list">Classificar lista</string>
+    <string name="sortlist_option_location">Local</string>
+    <string name="sortlist_option_name">Nome</string>
+    <string name="no_known_allergies">Nenhuma alergia conhecida</string>
+    <string name="no_known_medication_allergies">Nenhuma alergia a medicação conhecida</string>
+    <string name="no_medication_allergies_recorded">Alergias de medicação não cadastradas</string>
+    <string name="careteam_title">Equipe de atendimento</string>
+    <string name="patient_summary_fragment_title">Resumo do paciente</string>
+    <string name="settings_changepin">Alterar PIN</string>
+    <string name="settings_createpin">Criar PIN</string>
+    <string name="settings_removepin">Remover PIN</string>
+    <string name="settings_organization">Organização</string>
+    <string name="settings_logout">Sair</string>
+    <string name="settings_title">Configurações</string>
+    <string name="org_select_title">Selecionar organização</string>
+    <string name="org_nodataavailable">Nenhuma organização disponível</string>
+    <string name="patient_not_selected">Não há prontuários abertos</string>
+    <string name="name_alert_ind">*&lt;i&gt;%s&lt;/i&gt;</string>
+    <string name="user_full_name">%1$s, %2$s</string>
+    <string name="work_in_progress_logout">Toda a documentação será perdida. Tem certeza de que deseja fazer logoff?</string>
+
+    <string name="about">Sobre</string>
+
+</resources>

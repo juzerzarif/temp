@@ -1,0 +1,130 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingRight="@dimen/list_item_margin"
+    android:paddingEnd="@dimen/list_item_margin"
+    android:paddingLeft="@dimen/list_item_margin"
+    android:paddingStart="@dimen/list_item_margin"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal"
+    android:background="@drawable/list_item_selector"
+    tools:context="com.cerner.cura.ui.elements.PatientListItem">
+
+    <ImageView
+        android:id="@+id/patientNotificationImageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="3dp"
+        tools:src="@drawable/icon_critical_alert"/>
+
+    <LinearLayout
+        android:id="@+id/patientNameView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="LastName, FirstNameVeryVeryLongForTesting"
+            style="@style/TextView.Large.Bold"/>
+
+        <LinearLayout
+            android:id="@+id/patientInfoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|start">
+
+            <TextView
+                android:id="@+id/ageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:textColor="@color/ContentSecondary"
+                tools:text="10 years"
+                style="@style/TextView.Default"/>
+
+            <TextView
+                android:id="@+id/sexView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:textColor="@color/ContentSecondary"
+                tools:text="M"
+                style="@style/TextView.Default.Bold"/>
+
+            <TextView
+                android:id="@+id/dobAbrevView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patientlist_dateofbirth_abbreviation"
+                android:layout_marginEnd="@dimen/field_spacing_margin"
+                android:textColor="@color/ContentSecondary"
+                style="@style/TextView.Default"/>
+
+            <TextView
+                android:id="@+id/dobView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ContentSecondary"
+                tools:text="01/01/2003"
+                style="@style/TextView.Default.Bold"/>
+
+            <TextView
+                android:id="@+id/noRelationshipView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patientlist_no_relationship_exists"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/ContentSecondary"
+                style="@style/TextView.Default.Italics"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|start">
+
+            <TextView
+                android:id="@+id/roomBedView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/field_spacing_margin"
+                tools:text="Room - Bed"
+                style="@style/TextView.Default"/>
+
+            <TextView
+                android:id="@+id/alertView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/field_spacing_margin"
+                android:gravity="end"
+                android:text="@string/patientlist_namealert"
+                android:textColor="@color/ContentTertiary"
+                style="@style/TextView.Default"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/chevron"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/pre_chevron_spacing"
+        android:gravity="center"
+        android:src="@drawable/icon_chevron"/>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application>
+        <activity
+            android:name="com.cerner.nursing.nursing.ui.PCTStartActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:autoRemoveFromRecents="true"
+            android:alwaysRetainTaskState="true"
+            tools:ignore="UnusedAttribute">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cerner.nursing.nursing.ui.PatientListActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:autoRemoveFromRecents="true"
+            android:alwaysRetainTaskState="true"
+            tools:ignore="UnusedAttribute">
+        </activity>
+    </application>
+
+</manifest>
+

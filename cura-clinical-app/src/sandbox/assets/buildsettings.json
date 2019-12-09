@@ -1,0 +1,15 @@
+{
+  "com.cerner.nursing.nursing.sandbox": {
+    "environments": {
+      "prod": {
+        "1": "https://nursing.sandboxcernerpowerchart.com"
+      },
+      "nonprod": {
+        "1": "https://clinical-latest.sandboxcareawareconnect.com"
+      }
+    },
+    "fallbackUpdateUrl": "https://tiny.cc/CernerNursingSandbox",
+    "useSSOAuthentication": "false",
+    "secureWindow": "false"
+  }
+}

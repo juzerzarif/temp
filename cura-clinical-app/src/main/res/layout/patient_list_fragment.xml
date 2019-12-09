@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    style="@style/CuraTheme.Fragment"
+    tools:context=".ui.PatientListFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout_patient_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/patientlist_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

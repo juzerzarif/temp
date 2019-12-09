@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="close" tools:override="true">Close</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="drawer_patient_chart">Patient Chart</string>
+    <string name="drawer_medsadmin">Medications</string>
+    <string name="drawer_speccol">Specimen Collections</string>
+    <string name="drawer_charting_navigator">Charting</string>
+    <string name="drawer_logout_confirmation">Are you sure you want to log out?</string>
+    <string name="patientlist_title">Patient List</string>
+    <string name="patientlist_nodataavailable">No patients on patient list</string>
+    <string name="patientlist_toomanypatients">The patient list exceeds the number of patients allowed. Select another patient list.</string>
+    <string name="patientlist_changelist_nodataavailable">No Available Lists</string>
+    <string name="patientlist_namealert">*Name Alert</string>
+    <string name="patientlist_no_relationship_exists">No Relationship Exists</string>
+    <string name="patientlist_room_bed_format">%1$s - %2$s</string>
+    <string name="select_list">Select List</string>
+    <string name="sort_list">Sort List</string>
+    <string name="sortlist_option_location">Location</string>
+    <string name="sortlist_option_name">Name</string>
+    <string name="no_known_allergies">No Known Allergies</string>
+    <string name="no_known_medication_allergies">No Known Medication Allergies</string>
+    <string name="no_medication_allergies_recorded">Medication Allergies Not Recorded</string>
+    <string name="careteam_title">Care Team</string>
+    <string name="patient_summary_fragment_title">Patient Summary</string>
+    <string name="settings_changepin">Change PIN</string>
+    <string name="settings_createpin">Create PIN</string>
+    <string name="settings_removepin">Remove PIN</string>
+    <string name="settings_organization">Organization</string>
+    <string name="settings_logout">Log Out</string>
+    <string name="settings_title">Settings</string>
+    <string name="org_select_title">Select Organization</string>
+    <string name="org_nodataavailable">No Organizations Available</string>
+    <string name="patient_not_selected">No Open Chart</string>
+    <string name="name_alert_ind">*&lt;i&gt;%s&lt;/i&gt;</string>
+    <string name="user_full_name">%1$s, %2$s</string>
+    <string name="work_in_progress_logout">All documentation will be lost. Are you sure you want to log out?</string>
+
+    <string name="about">About</string>
+
+</resources>

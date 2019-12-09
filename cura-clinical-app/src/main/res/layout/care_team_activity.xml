@@ -1,0 +1,48 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CuraTheme.Fragment"
+    tools:context=".ui.CareTeamActivity">
+
+    <!-- The main content view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/PatientDemographicsFragment"
+            android:name="com.cerner.cura.demographics.ui.DemographicsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            tools:layout="@layout/demog_patient"/>
+
+        <fragment
+            android:id="@+id/NotificationFragment"
+            android:name="com.cerner.cura.ui.elements.banner.NotificationBannerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="start"
+            tools:layout="@layout/notification_banner_fragment"/>
+
+        <FrameLayout
+            android:id="@+id/careteam_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!-- The navigation drawer -->
+    <fragment
+        android:name="com.cerner.cura.ui.elements.drawer.DrawerFragment"
+        android:id="@+id/drawer_fragment"
+        android:layout_width="@dimen/drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:layout="@layout/drawer_fragment"/>
+
+</android.support.v4.widget.DrawerLayout>

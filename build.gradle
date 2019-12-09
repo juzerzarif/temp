@@ -1,0 +1,52 @@
+wrapper {
+    gradleVersion = '5.6'
+//    distributionUrl = "https://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
+}
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "http://repo.release.cerner.corp/main/repo/"
+        }
+    }
+
+    rootProject.ext.set("newRelicVersion", "5.23.0")
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath 'com.cerner.ion.gradle:cerner-gradle-deploy:1.0.0'
+        classpath "com.newrelic.agent.android:agent-gradle-plugin:$rootProject.ext.newRelicVersion"
+    }
+}
+
+subprojects {
+    // define variables use in subprojects
+    project.ext.set('compileSdkVersion', 29)
+    project.ext.set('buildToolsVersion', '29.0.1')
+
+    project.ext.set('minSdkVersion', 19)
+    project.ext.set('targetSdkVersion', 28)
+    project.ext.set('versionCode', 38)
+    project.ext.set('versionName', '2.6.0')
+
+    project.ext.set('javaVersion', JavaVersion.VERSION_1_8)
+
+    group = 'com.cerner.nursing.nursing'
+    version = project.ext.get('versionName') + 'SNAPSHOT'
+
+    repositories {
+        mavenLocal()
+        google()
+        jcenter()
+        maven {
+            url "http://repo.release.cerner.corp/main/repo/"
+        }
+        maven {
+            url "http://repo.nightly.cerner.corp/nexus/content/repositories/ion-nightly-repo/"
+        }
+        maven {
+            url "http://repo.nightly.cerner.corp/nexus/content/repositories/nursingmobility-nightly-repo/"
+        }
+    }
+}

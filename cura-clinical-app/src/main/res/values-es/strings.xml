@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="close" tools:override="true">Cerrar</string>
+    <string name="drawer_open">Abrir el cajón</string>
+    <string name="drawer_close">Cerrar el cajón</string>
+    <string name="drawer_patient_chart">Historia clínica</string>
+    <string name="drawer_medsadmin">Medicación</string>
+    <string name="drawer_speccol">Specimen Collections</string>
+    <string name="drawer_charting_navigator">Charting</string>
+    <string name="drawer_logout_confirmation">¿Está seguro de que desea cerrar la sesión?</string>
+    <string name="patientlist_title">Lista de pacientes</string>
+    <string name="patientlist_nodataavailable">No hay pacientes en la lista de pacientes</string>
+    <string name="patientlist_toomanypatients">La lista de pacientes supera el número de pacientes permitido. Seleccione otra lista de pacientes.</string>
+    <string name="patientlist_changelist_nodataavailable">No hay listas disponibles</string>
+    <string name="patientlist_namealert">*Alerta de nombre</string>
+    <string name="patientlist_no_relationship_exists">No existe relación.</string>
+    <string name="patientlist_room_bed_format">%1$s a %2$s</string>
+    <string name="select_list">Seleccionar lista</string>
+    <string name="sort_list">Ordenar lista</string>
+    <string name="sortlist_option_location">Ubicación</string>
+    <string name="sortlist_option_name">Nombre</string>
+    <string name="no_known_allergies">Alergias no conocidas</string>
+    <string name="no_known_medication_allergies">Alergias de medicación no conocidas (AMNC)</string>
+    <string name="no_medication_allergies_recorded">Alergias de medicación no registradas</string>
+    <string name="careteam_title">Equipo de cuidados</string>
+    <string name="patient_summary_fragment_title">Resumen de paciente</string>
+    <string name="settings_changepin">Cambiar PIN</string>
+    <string name="settings_createpin">Crear PIN</string>
+    <string name="settings_removepin">Quitar PIN</string>
+    <string name="settings_organization">Organización</string>
+    <string name="settings_logout">Cerrar sesión</string>
+    <string name="settings_title">Configuración</string>
+    <string name="org_select_title">Seleccionar organización</string>
+    <string name="org_nodataavailable">No hay organizaciones disponibles</string>
+    <string name="patient_not_selected">Ninguna historia clínica abierta</string>
+    <string name="name_alert_ind">*<i>%s</i></string>
+    <string name="user_full_name">%1$s, %2$s</string>
+    <string name="work_in_progress_logout">Se perderá toda la documentación. ¿Está seguro de que desea cerrar la sesión?</string>
+
+    <string name="about">Acerca de</string>
+
+</resources>

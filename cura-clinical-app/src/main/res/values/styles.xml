@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashScreen" parent="CuraTheme.Fragment">
+        <item name="android:background">@drawable/splash_screen</item>
+    </style>
+</resources>

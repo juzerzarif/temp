@@ -1,0 +1,65 @@
+{
+  "com.cerner.nursing.nursing": {
+    "environments": {
+      "prod": {
+        "1": "https://clinical-latest.careawareconnect.com",
+        "3": "https://nursing-latest.au.cernerpowerchart.com"
+      }
+    },
+    "fallbackUpdateUrl": "https://tiny.cc/CernerNursing",
+    "useSSOAuthentication": "false",
+    "secureWindow": "false"
+  },
+  "com.cerner.nursing.nursing.demo": {
+    "environments": {
+      "prod": {
+        "1": "https://nursing.cernerpowerchart.com"
+      }
+    },
+    "fallbackUpdateUrl": "https://tiny.cc/CernerNursingDemo",
+    "useSSOAuthentication": "false",
+    "secureWindow": "false"
+  },
+  "com.cerner.nursing.nursing.dev": {
+    "enableDebugSettings": "true",
+    "environments": {
+      "prod": {
+//        "1": "https://nursing.devcernerpowerchart.com"
+        "1": "http://c02yj2fzjgh5.cerner.com:3000"
+      },
+      "nonprod": {
+//        "1": "https://nursing.devcernerpowerchart.com"
+        "1": "http://c02yj2fzjgh5.cerner.com:3000"
+      }
+    },
+    "fallbackUpdateUrl": "https://tiny.cc/CernerNursingDev",
+    "useSSOAuthentication": "false",
+    "secureWindow": "false"
+  },
+  "com.cerner.nursing.nursing.internal": {
+    "environments": {
+      "prod": {
+        "1": "https://nursing.cernerpowerchart.com"
+      },
+      "nonprod": {
+        "1": "https://nursing.sandboxcernerpowerchart.com"
+      }
+    },
+    "fallbackUpdateUrl": "https://tiny.cc/CernerNursingInternalProd",
+    "useSSOAuthentication": "false",
+    "secureWindow": "false"
+  },
+  "com.cerner.nursing.nursing.staging": {
+    "environments": {
+      "prod": {
+        "1": "https://nursing.stagingcernerpowerchart.com"
+      },
+      "nonprod": {
+        "1": "https://clinical-latest.stagingcareawareconnect.com"
+      }
+    },
+    "fallbackUpdateUrl": "https://tiny.cc/CernerNursingStaging",
+    "useSSOAuthentication": "false",
+    "secureWindow": "false"
+  }
+}

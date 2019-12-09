@@ -1,0 +1,15 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/change_list"
+        app:showAsAction="never"
+        android:title="@string/select_list"/>
+
+    <item
+        android:id="@+id/sort_list"
+        app:showAsAction="never"
+        android:title="@string/sort_list"/>
+
+</menu>

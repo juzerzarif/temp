@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cerner.nursing.nursing">
+
+    <permission-group
+        android:name="android.permission-group.Cerner"
+        android:label="Cerner"
+        android:priority="10000"/>
+
+    <permission
+        android:label="open patient's chart"
+        android:name="com.cerner.nursing.nursing.OPEN_CHART"
+        android:protectionLevel="signature"/>
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+
+    <application
+        android:name="com.cerner.nursing.nursing.base.NursingApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:supportsRtl="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/CuraTheme"
+        android:label="${appName}${appNameSuffix}"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:replace="name, theme, label, icon, allowBackup">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="true"/>
+        <activity
+            android:name="com.cerner.nursing.nursing.ui.PatientChartActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label=""
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:taskAffinity=":PatientChartModule"
+            android:alwaysRetainTaskState="true"
+            android:parentActivityName="com.cerner.nursing.nursing.ui.PatientListActivity"/>
+        <activity
+            android:name="com.cerner.nursing.nursing.ui.MedsAdminActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label=""
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:taskAffinity=":MedsAdminModule"
+            android:alwaysRetainTaskState="true"
+            android:parentActivityName="com.cerner.nursing.nursing.ui.PatientListActivity"/>
+        <activity
+            android:name="com.cerner.nursing.nursing.ui.SpecimenCollectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label=""
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:taskAffinity=":SpecColModule"
+            android:parentActivityName="com.cerner.nursing.nursing.ui.PatientListActivity"/>
+        <activity
+            android:name="com.cerner.nursing.nursing.ui.ChartingNavigatorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label=""
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:taskAffinity=":ChartingNavModule"
+            android:parentActivityName="com.cerner.nursing.nursing.ui.PatientListActivity"/>
+        <activity
+            android:name="com.cerner.nursing.nursing.ui.CareTeamActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label=""
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:taskAffinity=":CareTeamModule"
+            android:alwaysRetainTaskState="true"
+            android:parentActivityName="com.cerner.nursing.nursing.ui.PatientListActivity"/>
+        <activity
+            android:name="com.cerner.nursing.nursing.ui.DeviceAssociationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label=""
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:taskAffinity=":DeviceAssociationModule"
+            android:alwaysRetainTaskState="true"
+            android:parentActivityName="com.cerner.nursing.nursing.ui.PatientListActivity">
+            <intent-filter>
+                <action android:name="com.cerner.cura.scanning.SCAN_DEVICES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cerner.nursing.nursing.ui.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label=""
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:taskAffinity=":SettingsModule"
+            android:alwaysRetainTaskState="true"/>
+        <activity
+            android:name="com.cerner.nursing.nursing.ui.AppSwitchEntryActivity"
+            android:exported="true"
+            android:permission="com.cerner.nursing.nursing.OPEN_CHART"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cerner.nursing.nursing.OPEN_PATIENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.cerner.cura.scanning.SCAN_PATIENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+

@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    tools:context="com.cerner.cura.ui.elements.DrawerPatientListItem">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="Patient Name"
+            style="@style/DrawerPatientListItem.Top"/>
+
+        <LinearLayout
+            android:id="@+id/patientInfoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/ageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="10 years"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                style="@style/DrawerPatientListItem.Bottom"/>
+
+            <TextView
+                android:id="@+id/sexView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="M"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                style="@style/DrawerPatientListItem.Bottom"/>
+
+            <TextView
+                android:id="@+id/dobAbrevView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patientlist_dateofbirth_abbreviation"
+                android:layout_marginEnd="@dimen/field_spacing_margin"
+                style="@style/DrawerPatientListItem.Bottom"/>
+
+            <TextView
+                android:id="@+id/dobView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                tools:text="01/01/2003"
+                android:textStyle="bold"
+                style="@style/DrawerPatientListItem.Bottom"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dropDownInd"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_arrow_down"/>
+
+</LinearLayout>

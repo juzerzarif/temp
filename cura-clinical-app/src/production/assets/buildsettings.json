@@ -1,0 +1,15 @@
+{
+  "com.cerner.nursing.nursing": {
+    "environments": {
+      "prod": {
+        "1": "https://nursing.cernerpowerchart.com",
+        "3": "https://nursing.au.cernerpowerchart.com"
+      },
+      "nonprod": {
+        "1": "https://nursing.sandboxcernerpowerchart.com"
+      }
+    },
+    "fallbackUpdateUrl": "https://tiny.cc/CernerNursing",
+    "useSSOAuthentication": "false"
+  }
+}

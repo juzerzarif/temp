@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="close" tools:override="true">Fermer</string>
+    <string name="drawer_open">Ouvrir le menu de navigation</string>
+    <string name="drawer_close">Fermer le menu de navigation</string>
+    <string name="drawer_patient_chart">Dossier patient</string>
+    <string name="drawer_medsadmin">Médicaments</string>
+    <string name="drawer_speccol">Specimen Collections</string>
+    <string name="drawer_charting_navigator">Charting</string>
+    <string name="drawer_logout_confirmation">Voulez-vous vraiment vous déconnecter ?</string>
+    <string name="patientlist_title">Liste de patients</string>
+    <string name="patientlist_nodataavailable">Il n\'y a aucun patient dans la liste de patients.</string>
+    <string name="patientlist_toomanypatients">Le nombre de patients dans la liste de patients excède le nombre autorisé. Sélectionnez une autre liste de patients.</string>
+    <string name="patientlist_changelist_nodataavailable">Aucune liste disponible</string>
+    <string name="patientlist_namealert">*Alerte liée au nom</string>
+    <string name="patientlist_no_relationship_exists">Il n\'existe aucune relation.</string>
+    <string name="patientlist_room_bed_format">%1$s – %2$s</string>
+    <string name="select_list">Sélectionner une liste</string>
+    <string name="sort_list">Trier la liste</string>
+    <string name="sortlist_option_location">Emplacement</string>
+    <string name="sortlist_option_name">Nom</string>
+    <string name="no_known_allergies">Aucune allergie connue</string>
+    <string name="no_known_medication_allergies">Aucune allergie médicamenteuse connue</string>
+    <string name="no_medication_allergies_recorded">Aucune allergie médicamenteuse enregistrée</string>
+    <string name="careteam_title">Équipe soignante</string>
+    <string name="patient_summary_fragment_title">Résumé patient</string>
+    <string name="settings_changepin">Modifier le code confidentiel</string>
+    <string name="settings_createpin">Créer un code confidentiel</string>
+    <string name="settings_removepin">Supprimer le code confidentiel</string>
+    <string name="settings_organization">Organisation</string>
+    <string name="settings_logout">Déconnexion</string>
+    <string name="settings_title">Paramètres</string>
+    <string name="org_select_title">Sélectionner une organisation</string>
+    <string name="org_nodataavailable">Aucune organisation disponible</string>
+    <string name="patient_not_selected">Aucun dossier n\'est ouvert.</string>
+    <string name="name_alert_ind">*&lt;i&gt;%s&lt;/i&gt;</string>
+    <string name="user_full_name">%1$s, %2$s</string>
+    <string name="work_in_progress_logout">Toute la documentation sera perdue. Voulez-vous vraiment vous déconnecter ?</string>
+
+    <string name="about">À propos de</string>
+
+</resources>
